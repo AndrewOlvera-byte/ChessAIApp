@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chess</title>
+  
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="/static/styles/chessStyle.css">
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js" integrity="sha512-xRllwz2gdZciIB+AkEbeq+gVhX8VB8XsfqeFbUh+SzHlN96dEduwtTuVuc2u9EROlmW9+yhRlxjif66ORpsgVA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ 
+  <script src="/static/scripts/chessScript.js" defer></script>
+</head>
+<body>
+  <!-- Left Sidebar -->
+  <div class="sideBarLeft">
+    <div class="logoContainer">
+      <img src="/static/images/logo.png" alt="Chess Logo" class="logo">
+    </div>
+    <h1>Chess AI</h1>
+  </div>
+
+  <!-- Board Container (center) -->
+  <div class="boardContainer"></div>
+
+  <!-- Right Sidebar -->
+  <div class="sideBarRight">
+    <div class="moveHistoryContainer">
+      <div class="buttonContainer">
+        <button id="newGameButton" class="button">New Game</button>
+        <button id="toggleColorButton" class="button">Switch Color</button>
+        <button id="resetButton" class="button">Reset</button>
+      </div>
+      <h1>Move History</h1>
+      <!-- Ordered list for the move history (pairs of moves per line) -->
+      <ol class="moveHistoryTextContainer"></ol>
+    </div>
+  </div>
+</body>
+</html>
